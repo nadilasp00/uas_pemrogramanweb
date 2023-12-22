@@ -1,0 +1,100 @@
+.container {
+    width: 7000px;
+    margin: auto;
+}
+
+.header {
+    width: 1000px;
+    height: 400px;
+    background-color: #fff0f5;
+}
+
+.header img {
+    width: 1000px;
+    height: 400px;
+}
+
+.content {
+    width: 1000px;
+    height: 850px;
+    background-color: #ffe4e1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-left: 300px;
+    padding-right: 20px;
+    text-indent: 29px;
+}
+.content h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content h3 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.content img {
+    margin-left: 25px;
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff1493;
+}
+
+.content li {
+    float: left;
+}
+
+.content li a {
+    display: block;
+    color: #ffb6c1;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+.content li a:hover:not(active) {
+    background-color: #ffefd5;
+}
+
+.content .ukuran{
+	list-style-type: square; /* list dengan bentuk square */
+}
+
+.content .active {
+    background-color: #ff1493;
+}
+
+.footer {
+    background-color: #ff1493;
+    width: 1000px;
+    height: 135px;
+}
+
+.footer p {
+    margin-top: 0px;
+    padding-top: 60px;
+    text-align: center;
+    color: #ffb6c1;
+}

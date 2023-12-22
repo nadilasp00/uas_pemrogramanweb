@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banda Neira</title>
+    <link rel="stylesheet" type="text/css" href="styleecss.css">
+    <script type="text/javascript">waktu</script>
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div id="navigasi">
+    </div>
+    
+    <div id="content">
+      <div>
+        <script>
+          function formatJam(jam) {
+              return (jam < 10 ? '0' : '') + jam;
+          }
+
+          function formatMenit(menit) {
+              return (menit < 10 ? '0' : '') + menit;
+          }
+
+          function formatDetik(detik) {
+              return (detik < 10 ? '0' : '') + detik;
+          }
+
+          function formatTanggal(tanggal) {
+              return (tanggal < 10 ? '0' : '') + tanggal;
+          }
+
+          function formatBulan(bulan) {
+              const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+              return namaBulan[bulan - 1];
+          }
+
+          function formatTahun(tahun) {
+              return tahun.toString().padStart(4, '0');
+          }
+
+          function tampilkanWaktu() {
+              const waktuSekarang = new Date();
+              const jam = waktuSekarang.getHours();
+              const menit = waktuSekarang.getMinutes();
+              const detik = waktuSekarang.getSeconds();
+              const tanggal = waktuSekarang.getDate();
+              const bulan = waktuSekarang.getMonth() + 1;
+              const tahun = waktuSekarang.getFullYear();
+
+              document.getElementById('jam').innerHTML = formatJam(jam) + ':' + formatMenit(menit) + ':' + formatDetik(detik);
+              document.getElementById('tanggal').innerHTML = formatTanggal(tanggal) + ' ' + formatBulan(bulan) + ' ' + formatTahun(tahun);
+          }
+
+          setInterval(tampilkanWaktu, 1000);
+      </script>
+      <p id="jam"></p>
+      <p id="tanggal"></p>
+      </div>
+
+<body>
+    <div class="container">
+        <div class="header"> <img src="image/banda-neira-island.jpg" alt="banner"> </div>
+        <div class="content">
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="Galery.html">Galery</a></li>
+                <li><a href="Sejarah.html">Sejarah</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <h1>Banda Neira </h1>
+            <img src="image/dolphin.jpg" alt="dolphin1">
+            <p>Banda Neira adalah destinasi wisata yang memikat dan menjadi sorotan untuk tahun 2023 dengan tersedianya opsi open trip ke pulau indah ini. Bagi para wisatawan pilihan penginapan di Banda Neira semakin beragam, termasuk Maulana Hotel Banda Neira yang menawarkan kenyamanan dan pemandangan menakjubkan..</p>
+            <p>Tak hanya itu, berbagai opsi transportasi, mulai dari pesawat hingga kapal sangat memudahkan perjalanan menuju Banda Neira. Tiket pesawat dan kapal termasuk tiket kapal Surabaya Banda Neira dapat dengan mudah ditemukan sementara pelabuhan Banda Neira menjadi gerbang utama untuk memulai petualangan di pulau ini.</p>
+            <p>Selain pesona alamnya, Banda Neira juga menyajikan sejarah melalui benteng-bentengnya yang megah. Jangan lupa menjelajahi pantai-pantai eksotis yang memikat hati para pengunjung. Selama berada di sana, nikmati juga makanan khas Banda Neira, terutama hidangan yang mengandung pala, rempah unggulan pulau ini.</p>
+            <h2> Sejarah Banda Neira </h2>
+            <p1>Sebelum abad ke-15, Kepulauan Banda sudah terkenal di dunia sebagai daerah produsen buah pala. Menurut jurnal Banda Naira dalam Prespektif Sejarah Maritim karya Mezak Wakim S.Pd, kontak awal Kepulauan Banda terjadi dengan bangsa-bangsa Asia, seperti para pelaut dan pedagang Melayu, India, Cina dan Arab. Selain menjual pala, orang-orang Banda juga ikut serta dalam pelayaran perdagangan sampai ke Malaka. Mereka juga ikut dalam pelayaran niaga, dan memiliki armada dagang sendiri yang mengangkut hasil-hasil bumi dari pulau-pulau lain ke Banda. anda pun memiliki armada perang laut yang dikenal dengan istilah “Korakora” atau Belang. Kora-kora terbagi atas dua jenis, yakni khusus untuk berperang dan jenis khusus untuk melayani perjalanan Raja.</p1>
+            <p1>Menjelang abad ke-16, buah pala yang menjadi hasil utama Kepulauan Banda merupakan komoditi dunia yang dibutuhkan masyarakat Eropa. Ada seorang penjelajah Portugis, namanya Laksamana Alfonso de Albuquerque yang berupaya menemukan kepulauan rempah-rempah. Singkat cerita, ia mendapat informasi bahwa di Malaka terdapat banyak rempah-rempah. Akhirnya, ia bertolak ke Asia dan pada tahun 1511 berhasil menalukkan Malaka. Pada saat itu, pelaut dan pedagang Banda Neira juga telah memiliki pemukiman di Malaka. Setelah menduduki Malaka kurang lebih 3 bulan, pada November 1511 Albuquerque mengirimkan dua kapal layarnya untuk menemukan kepulauan Banda yang kaya akan buah pala. </p1>
+        <br>
+            </div>
+        </div>
+        <div class="footer">
+            <p> &copy;Copyright-2023 Nadila Septiliana Putri-231011700836</p>
+        </div>
+    </div>
+</body>
+</html>
